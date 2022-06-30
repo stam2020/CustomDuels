@@ -1,76 +1,26 @@
-drop_frequency: 100 #In ticks
-generate_offline: false #Run player's generators while they're offline
-generators: #All generators players can obtain
-  #An example generator
-  diamond_gen:
-    name: "&6&lDiamond Generator"
-    lore: "&7&lGenerates Diamond" #Make this field empty if you want the item to have no lore
-    block: "diamond_ore"
-    drop: "diamond"
-    upgrade_price: 500
-    tier: 1 #Tiers go up from 1, the higher the number the better the generator. The generator upgrades to the generator with the next tier
-items: #All items used. These are the items the generators drop
-  diamond:
-    sell_price: 50
-    name: "&bDiamond" #Leave empty for default name
-    lore: "&8/sell to sell" #Leave empty for no lore
-sellwands: #Sellwands, when the player right clicks with them on a chest, all items in it are sold
-  x1Sellwand:
-    name: "x1 Sell wand"
-    lore: "&cRight click a chest to sell its content"
-    item: "minecraft:blaze_rod"
-    multiplier: 1 #By how much will the money you get will be multiplied, must be a whole number
-
-#Messages for example
-#Possible types: message,title,actionbar,none
-#if the type is message you need the "message" field
-#if the type is title you need the "title","subtitle","fade_in","stay" and "fade_out" fields
-#if the type is actionbar you need "contents" field
-#if the type is none you don't need any fields
-#you can use the %n% and %a% in the sell_with_command and sell_with_wand, %n% is the amount of items sold, and %a% is the sell price
-#you can use the %l% and %m% in the gen_place and gen_break, %l% is the amount of gens the player placed and %m% is their max gens
-messages:
-  gen_place:
-    type: "message"
-    message: "&bYou placed a gen! %l%/%m%"
-  gen_break:
-    type: "none"
-  cant_break:
-    type: "actionbar"
-    contents: "&5You can't break this gen as it is not yours!"
-  cant_upgrade:
-      type: "actionbar"
-      contents: "&5You can't upgrade this gen as it is not yours!"
-  max_gen:
-    type: "title"
-    title: "&4Maximum gens reached"
-    subtitle: "&eUpgrade by buying new ranks!"
-    fade_in: 5
-    stay: 10
-    fade_out: 5
-  highest_gen:
-    type: "actionbar"
-    contents: "&bYou can't upgrade this gen anymore"
-  gen_upgrade:
-    type: "message"
-    message: "&aYou upgraded your generator!"
-  cant_sell_contents:
-    type: "actionbar"
-    contents: "&4You don't have permission to sell the contents of this chest!"
-  not_enough_money:
-    type: "message"
-    message: "&8You don't have enough money to upgrade this generator!"
-  sell_with_command:
-    type: "title"
-    title: "&bYou sold &e%n% &bitems for &e%a%&b$!"
-    subtitle: ""
-    fade_in: 5
-    stay: 10
-    fade_out: 5
-  sell_with_wand:
-    type: "title"
-    title: "&bYou sold &e%n% &bitems for &e%a%&b$!"
-    subtitle: ""
-    fade_in: 5
-    stay: 10
-    fade_out: 5
+maps:
+  woods:
+    name: "&cWoods"
+    rep_item: "dark_oak_log"
+    folder: "WOODS 1.01 BY lockshane"
+kits:
+  fighter:
+    name: "&6Fighter"
+    rep_item: "iron_sword"
+    items:
+      iron_sword:
+        unbreakable: yes
+      iron_axe:
+        unbreakable: yes
+    armor:
+      leather_helmet:
+        unbreakable: yes
+      leather_chestplate:
+        unbreakable: yes
+      leather_leggings:
+        unbreakable: yes
+      leather_boots:
+        unbreakable: yes
+    off_hand:
+      shield:
+        unbreakable: no

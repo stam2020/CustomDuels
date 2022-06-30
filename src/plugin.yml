@@ -1,40 +1,39 @@
-name: SimpleGenerators
-version: 1.1
+name: CustomDuels
+version: 1.0
 api-version: 1.16
-main: plainplaying.plugin.gens.SimpleGenerators
+main: plainplaying.plugin.duels.CustomDuels
 commands:
-  sell:
-    description: Sell all items in the player's inventory, priced using the config
-    aliases: [s,sellall]
-  SimpleGenerators:
+  duel:
+    description: send a custom duel request to a player
+  CustomDuels:
     description: General plugin information and commands
-    aliases: [sg,simplegens,simplegenerators,sgens]
+    aliases: [cd,customduels,cduels]
 depend:
   - Vault
-permissions:
-  simplegenerators.admin.reload:
-    description: Allows a player to reload the plugin
-  simplegenerators.admin.gen.add:
-    description: Allows a player to add a generator
-  simplegenerators.admin.gen.remove:
-    description: Allows a player to remove a generator
-  simplegenerators.admin.gen.edit:
-    description: Allows a player to edit a generator
-  simplegenerators.admin.gen.get:
-    description: Allows a player to give themselves a generator
-  simplegenerators.admin.item.add:
-    description: Allows a player to add an item
-  simplegenerators.admin.item.remove:
-    description: Allows a player to remove an item
-  simplegenerators.admin.item.edit:
-    description: Allows a player to edit an item
-  simplegenerators.admin.sellwand.add:
-    description: Allows a player to add a sellwand
-  simplegenerators.admin.sellwand.remove:
-    description: Allows a player to remove a sellwand
-  simplegenerators.admin.sellwand.edit:
-    description: Allows a player to edit a sellwand
-  simplegenerators.admin.sellwand.get:
-    description: Allows a player to give themselves a sellwand
+#permissions:
+#  simplegenerators.admin.reload:
+#    description: Allows a player to reload the plugin
+#  simplegenerators.admin.gen.add:
+#    description: Allows a player to add a generator
+#  simplegenerators.admin.gen.remove:
+#    description: Allows a player to remove a generator
+#  simplegenerators.admin.gen.edit:
+#    description: Allows a player to edit a generator
+#  simplegenerators.admin.gen.get:
+#    description: Allows a player to give themselves a generator
+#  simplegenerators.admin.item.add:
+#    description: Allows a player to add an item
+#  simplegenerators.admin.item.remove:
+#    description: Allows a player to remove an item
+#  simplegenerators.admin.item.edit:
+#    description: Allows a player to edit an item
+#  simplegenerators.admin.sellwand.add:
+#    description: Allows a player to add a sellwand
+#  simplegenerators.admin.sellwand.remove:
+#    description: Allows a player to remove a sellwand
+#  simplegenerators.admin.sellwand.edit:
+#    description: Allows a player to edit a sellwand
+#  simplegenerators.admin.sellwand.get:
+#    description: Allows a player to give themselves a sellwand
 
 

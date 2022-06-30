@@ -1,4 +1,4 @@
-package plainplaying.plugin.gens;
+package plainplaying.plugin.duels;
 
 public class Pair<type1,type2> {
     type1 _A;
