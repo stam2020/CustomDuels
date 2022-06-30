@@ -123,21 +123,27 @@ public class CustomDuels extends JavaPlugin implements Listener {
                     switch (relevantFight.time){
                         case 3 -> {
                             e.getInventory().setItem(7, DuelGUI.createGuiItem(Material.CLOCK, "&aTime: 5m"));
+                            relevantFight.time = 5;
                         }
                         case 5 -> {
                             e.getInventory().setItem(7, DuelGUI.createGuiItem(Material.CLOCK, "&aTime: 7m"));
+                            relevantFight.time = 7;
                         }
                         case 7 -> {
                             e.getInventory().setItem(7, DuelGUI.createGuiItem(Material.CLOCK, "&aTime: 10m"));
+                            relevantFight.time = 10;
                         }
                         case 10 -> {
                             e.getInventory().setItem(7, DuelGUI.createGuiItem(Material.CLOCK, "&aTime: 13m"));
+                            relevantFight.time = 13;
                         }
                         case 13 -> {
                             e.getInventory().setItem(7, DuelGUI.createGuiItem(Material.CLOCK, "&aTime: 15m"));
+                            relevantFight.time = 15;
                         }
                         case 15 -> {
                             e.getInventory().setItem(7, DuelGUI.createGuiItem(Material.CLOCK, "&aTime: 3m"));
+                            relevantFight.time = 3;
                         }
 
                     }
